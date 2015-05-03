@@ -27,7 +27,7 @@
 # Copyright 2015 Dan Foster, unless otherwise noted.
 #
 class sitenetwork (
-  $vlan = $sitenetwork::params::vlan
+  $vlan = $sitenetwork::params::vlan,
   $hierahash = $sitenetwork::params::hierahash
 ) inherits ::sitenetwork::params {
   class { 'network::global':
